@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+
+<style>
+    .per{
+  display: flex;
+    }
+    .child {
+  width: 60%;
+  margin: 0 auto;
+  background-color:aqua;
+  opacity: 0.5;
+}
+    body {
+    background-image: url("https://github.com/Gobousei/science-challenge/blob/main/sozai_image_194386.jpg?raw=true");
+    min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding:10px;
+        }
+    .modal-open{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 50px;
+  font-weight: bold;
+  color: #fff;
+  background: #ff7f7f;
+  cursor: pointer;
+  margin-right:0.5em;
+}
+    button {
+  margin-right:5px;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+h1{
+  font-size:50px;
+}
+h2{
+  font-size:45px;
+}
+.center{
+  text-align:center;
+  margin:5 5 5 0px;
+}
+</style>
+  </head>
+  <body>
+    <div class="child">
+    <h1>タワー</h1><br>
+    <h1>今日の予定</h1>
+    <h1>　・<?=myData[0][4]?></h1>
+    <div style="text-align:center;">
+    <a href="https://docs.google.com/document/d/1x3pucn4LumL_SoxniB_cC5WE_UCyyReIZ8M534HamQ4/edit?usp=sharing"target="_blank"><h2>進捗状況</h2></a><br>
+    <a href="https://gobousei.github.io/science-challenge/science-challenge_compressed.pdf"target="_blank"><h2>競技概要</h2></a><br>
+    <a href="https://lucid.app/lucidchart/b888810b-4429-4618-982c-73bf6bac0030/edit?viewport_loc=-11%2C-11%2C1480%2C676%2C0_0&invitationId=inv_d9584538-86ed-42ff-a884-43e1d48feb8c#"target="_blank"><h2>フローチャート</h2></a><br>
+    <a href="https://docs.google.com/spreadsheets/d/1ASnZVCaHDEGzQsQG2ULpfP1x4VoSMVuiCLwbQ2bLmxM/edit#gid=0"target="_blank"><h2>予定表</h2></a><br>
+    </div>
+    <a href="<?= getAppUrl() ?>"><h2>トップページへ戻る</h2></a>
+    <a href="https://script.google.com/home/projects/1seTESCzZcgRsPCeZJj8D9zGJy2ezmdpATy7l385nJx9vNeBGX1R0YBQT/edit"target="_blank"><h2>ページの編集</h2></a>
+    </div>
+  </body>
